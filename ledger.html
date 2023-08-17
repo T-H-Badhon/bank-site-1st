@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <script src="https://cdn.tailwindcss.com"></script>
+    <title>Document</title>
+</head>
+<body id="led-body" class="bg-sky-300 w-9/12 mx-auto">
+    <header>
+        <h1 class="text-center text-slate-700 text-7xl p-12"><span class="text-stone-800">ROB</span> Bank</h1>
+        <h1  class="text-center text-yellow-50 text-6xl mb-5">Welcome To Your Daily Ledger</h1>
+    </header>
+    <main>
+        <section class="w-9/12 mx-auto grid grid-cols-3 gap-4 m-7">
+            <div class="bg-green-400 rounded-xl p-7">
+                <h1 class="text-4xl">Deposit</h1>
+                <h1 class="text-7xl">$<span id="dip-total">00</span></h1>
+            </div>
+            <div class="bg-green-400 rounded-xl p-7">
+                <h1 class="text-4xl">Withdraw</h1>
+                <h1 class="text-7xl">$<span id="wid-total">00</span></h1>
+            </div>
+            <div class="bg-red-200 rounded-xl p-7">
+                <h1 class="text-4xl">Balance</h1>
+                <h1 class="text-7xl">$<span id="bal-total">1500</span></h1>
+            </div>
+        </section>
+        <section class="w-9/12 mx-auto grid grid-cols-2 gap-4 m-7">
+            <div class="bg-green-400 rounded-xl p-7">
+                <h1 class="text-2xl">Deposit</h1>
+                <input class="p-2 w-1/2 rounded-lg m-2 " type="text" id="dip" placeholder="enter amount">
+                <button class="bg-gray-600 block px-5 py-2 rounded-lg m-2 text-lg" id="dip-btn">Deposit</button>
+            </div>
+            <div class="bg-red-400 rounded-xl p-7">
+                <h1 class="text-2xl">Withdraw</h1>
+                <input class="p-2 w-1/2 rounded-lg m-2 " type="text" id="wid" placeholder="enter amount">
+                <button class="bg-gray-600 block px-5 py-2 rounded-lg m-2 text-lg" id="wid-btn" >Withdraw</button>
+            </div>
+        </section>
+    </main>
+    <script src="js-code/ledger.js"></script>
+</body>
+</html>
